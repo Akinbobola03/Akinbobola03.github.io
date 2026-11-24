@@ -1,0 +1,465 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Portfolio of Akinyele Akinbobola Emmanuel, Data Analyst, Business Intelligence and IT Support professional.">
+<title>Akinyele Akinbobola Emmanuel | Professional Portfolio</title>
+<style>
+:root {
+  --navy:#0b1830;
+  --blue:#173b70;
+  --accent:#55a5ff;
+  --light:#f4f7fc;
+  --white:#ffffff;
+  --text:#24334a;
+  --muted:#66758b;
+}
+* {box-sizing:border-box;margin:0;padding:0}
+html {scroll-behavior:smooth}
+body {
+  font-family:Arial,Helvetica,sans-serif;
+  background:var(--light);
+  color:var(--text);
+  line-height:1.7;
+}
+a {text-decoration:none;color:inherit}
+nav {
+  background:var(--navy);
+  color:white;
+  padding:18px 8%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  position:sticky;
+  top:0;
+  z-index:10;
+}
+.logo {font-size:22px;font-weight:bold;color:var(--accent)}
+.navlinks {display:flex;gap:22px;font-size:13px}
+.navlinks a:hover {color:var(--accent)}
+.hero {
+  background:linear-gradient(125deg,#09162d,#173d73);
+  color:white;
+  padding:105px 8%;
+  min-height:510px;
+  display:flex;
+  align-items:center;
+}
+.hero-content {max-width:850px}
+.eyebrow {
+  color:#75b8ff;
+  font-weight:bold;
+  letter-spacing:2px;
+  font-size:13px;
+  text-transform:uppercase;
+}
+.hero h1 {font-size:clamp(35px,6vw,58px);line-height:1.15;margin:20px 0}
+.hero h2 {font-size:21px;color:#b9d9ff;font-weight:500}
+.hero p {color:#d5e2f4;max-width:650px;margin:22px 0}
+.buttons {display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}
+.btn {
+  padding:12px 22px;
+  border-radius:7px;
+  background:var(--accent);
+  color:#07162d;
+  font-weight:bold;
+  display:inline-block;
+}
+.btn.outline {border:1px solid #8ebeff;color:white;background:transparent}
+section {padding:75px 8%}
+.section-title {font-size:30px;color:var(--navy);margin-bottom:12px}
+.section-intro {color:var(--muted);max-width:720px;margin-bottom:32px}
+.about-grid,.experience-grid,.project-grid {
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:22px;
+}
+.card {
+  background:white;
+  border:1px solid #e4eaf3;
+  border-radius:12px;
+  padding:25px;
+  box-shadow:0 5px 20px rgba(17,39,70,.04);
+}
+.card h3 {color:var(--blue);margin-bottom:10px}
+.card p,.card li {color:var(--muted);font-size:14px}
+.card ul {padding-left:20px;margin-top:12px}
+.skills {background:#eaf0f9}
+.skill-list {display:flex;flex-wrap:wrap;gap:12px}
+.skill {
+  background:white;
+  border:1px solid #dce6f4;
+  color:var(--blue);
+  padding:10px 16px;
+  border-radius:7px;
+  font-weight:bold;
+  font-size:14px;
+}
+.project-grid {grid-template-columns:repeat(2,minmax(0,1fr))}
+.project-card {border-top:4px solid var(--accent)}
+.tag {
+  display:inline-block;
+  background:#eaf3ff;
+  color:#245b9b;
+  padding:5px 9px;
+  border-radius:5px;
+  font-size:11px;
+  margin:10px 5px 10px 0;
+  font-weight:bold;
+}
+.project-card h3 {font-size:19px}
+.project-card h4 {font-size:14px;color:var(--blue);margin-top:15px}
+.project-card p {margin-top:5px}
+.note {font-size:12px!important;font-style:italic;margin-top:15px}
+.timeline {border-left:3px solid #b5d6ff;padding-left:25px}
+.timeline-item {margin-bottom:30px}
+.timeline-item h3 {color:var(--blue)}
+.timeline-item .date {font-size:13px;color:#3979b8;font-weight:bold}
+.education {background:#eaf0f9}
+.contact {
+  background:var(--navy);
+  color:white;
+  text-align:center;
+}
+.contact .section-title {color:white}
+.contact p {color:#c8d9ef;margin:12px auto;max-width:650px}
+.contact a {color:#75b8ff}
+footer {
+  background:#071225;
+  color:#9aabc2;
+  padding:22px;
+  text-align:center;
+  font-size:13px;
+}
+@media(max-width:750px) {
+  .navlinks {display:none}
+  .hero {padding:75px 7%}
+  section {padding:55px 7%}
+  .about-grid,.experience-grid,.project-grid {grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo">AAE.</div>
+  <div class="navlinks">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-content">
+    <div class="eyebrow">Welcome to my professional portfolio</div>
+    <h1>Akinyele Akinbobola Emmanuel</h1>
+    <h2>Data Analyst | Business Intelligence | IT Support</h2>
+    <p>
+      I am a Computer Science graduate passionate about using data,
+      technology and analytical thinking to solve business problems.
+      I have practical experience in data analysis, operational reporting,
+      data validation and technical support.
+    </p>
+    <div class="buttons">
+      <a href="#projects" class="btn">Explore My Projects</a>
+      <a href="#contact" class="btn outline">Contact Me</a>
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <h2 class="section-title">About Me</h2>
+  <p class="section-intro">
+    A technology enthusiast interested in transforming information
+    into meaningful insights and practical business solutions.
+  </p>
+  <div class="about-grid">
+    <div class="card">
+      <h3>Professional Profile</h3>
+      <p>
+        I hold a Bachelor of Science degree in Computer Science from
+        Ekiti State University. My experience includes working with
+        operational datasets, preparing performance reports,
+        validating information and supporting technical operations.
+        I am particularly interested in data analytics, business
+        intelligence and technology-driven decision-making.
+      </p>
+    </div>
+    <div class="card">
+      <h3>Career Objective</h3>
+      <p>
+        I aim to contribute to organizations by using analytical
+        skills, data visualization and technical problem-solving
+        to improve processes, support business decisions and
+        deliver reliable results. I am committed to continuous
+        learning and professional development.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="skills" id="skills">
+  <h2 class="section-title">Technical Skills</h2>
+  <p class="section-intro">
+    Tools and capabilities developed through my education,
+    professional experience and independent learning.
+  </p>
+  <div class="skill-list">
+    <span class="skill">Microsoft Excel</span>
+    <span class="skill">Power BI</span>
+    <span class="skill">SQL</span>
+    <span class="skill">Data Cleaning</span>
+    <span class="skill">Data Validation</span>
+    <span class="skill">Data Visualization</span>
+    <span class="skill">Statistical Analysis</span>
+    <span class="skill">Business Intelligence</span>
+    <span class="skill">Google Sheets</span>
+    <span class="skill">Microsoft Office</span>
+    <span class="skill">Technical Support</span>
+    <span class="skill">Basic Networking</span>
+    <span class="skill">Data Backup & Recovery</span>
+    <span class="skill">Altigen Server Management</span>
+    <span class="skill">Python – Foundational</span>
+    <span class="skill">JavaScript – Foundational</span>
+  </div>
+</section>
+
+<section id="experience">
+  <h2 class="section-title">Professional Experience</h2>
+  <p class="section-intro">
+    My professional exposure across data analysis and IT support.
+  </p>
+  <div class="experience-grid">
+    <div class="card">
+      <h3>Data Analyst Intern</h3>
+      <p><strong>Arnergy Solar Company</strong></p>
+      <p>January 2024 – Present (as recorded in my CV)</p>
+      <ul>
+        <li>Analyse operational and energy performance datasets.</li>
+        <li>Clean, organize and validate business information.</li>
+        <li>Prepare reports on energy generation and consumption.</li>
+        <li>Develop Power BI dashboards and performance visualizations.</li>
+        <li>Use Excel and SQL for data analysis and reporting.</li>
+        <li>Monitor performance indicators and identify unusual trends.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>IT Support Intern</h3>
+      <p><strong>Consollimited</strong></p>
+      <p>January 2024 – June 2024</p>
+      <ul>
+        <li>Supported routine IT operations and troubleshooting.</li>
+        <li>Assisted with technical support activities.</li>
+        <li>Gained exposure to networking fundamentals.</li>
+        <li>Worked with server management and data backup processes.</li>
+        <li>Supported basic system maintenance and recovery activities.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="skills">
+  <h2 class="section-title">Featured Projects</h2>
+  <p class="section-intro">
+    Selected analytical and technical project case studies.
+    Project descriptions below distinguish demonstrated experience
+    from work still to be developed.
+  </p>
+
+  <div class="project-grid">
+    <div class="card project-card">
+      <h3>01. Solar Energy Performance Analysis</h3>
+      <span class="tag">Excel</span>
+      <span class="tag">Power BI</span>
+      <span class="tag">SQL</span>
+      <h4>The Problem</h4>
+      <p>
+        Solar energy operations generate large amounts of information.
+        Understanding production, consumption and battery performance
+        requires accurate monitoring and reporting.
+      </p>
+      <h4>My Approach</h4>
+      <p>
+        Analyse energy datasets, validate records, calculate
+        performance indicators and present operational trends
+        through dashboards and reports.
+      </p>
+      <h4>Activities</h4>
+      <ul>
+        <li>Energy generation and consumption analysis.</li>
+        <li>Battery State of Charge monitoring.</li>
+        <li>Average and peak load analysis.</li>
+        <li>Performance reporting and visualization.</li>
+      </ul>
+      <h4>Expected Outcome</h4>
+      <p>
+        Clearer operational insights and improved visibility
+        into energy system performance.
+      </p>
+      <p class="note">
+        Based on my solar reporting experience. Individual client
+        figures and confidential operational data are not published.
+      </p>
+    </div>
+
+    <div class="card project-card">
+      <h3>02. Customer Records Management Dashboard</h3>
+      <span class="tag">Excel</span>
+      <span class="tag">SQL</span>
+      <span class="tag">Power BI</span>
+      <h4>The Problem</h4>
+      <p>
+        Incomplete records, duplicate entries and inconsistent
+        customer information can make operational reporting difficult.
+      </p>
+      <h4>My Approach</h4>
+      <p>
+        Design a structured demonstration database and dashboard
+        for tracking customer and installation records.
+      </p>
+      <h4>Planned Activities</h4>
+      <ul>
+        <li>Clean and organize customer records.</li>
+        <li>Identify duplicates and missing information.</li>
+        <li>Track installation and commissioning status.</li>
+        <li>Build SQL queries and Power BI reports.</li>
+      </ul>
+      <h4>Expected Outcome</h4>
+      <p>
+        A more organized reporting process and better visibility
+        into customer and installation records.
+      </p>
+      <p class="note">
+        Portfolio project to be implemented with a sample dataset.
+        Illustrative project, not a claimed company deployment.
+      </p>
+    </div>
+
+    <div class="card project-card">
+      <h3>03. Heart Disease Prediction Using Machine Learning</h3>
+      <span class="tag">Python</span>
+      <span class="tag">Pandas</span>
+      <span class="tag">Scikit-learn</span>
+      <h4>The Problem</h4>
+      <p>
+        Healthcare datasets contain information that can be
+        analysed to explore patterns associated with heart disease.
+      </p>
+      <h4>My Approach</h4>
+      <p>
+        Use a publicly available dataset to perform exploratory
+        analysis and develop a basic classification model.
+      </p>
+      <h4>Planned Activities</h4>
+      <ul>
+        <li>Data cleaning and preparation.</li>
+        <li>Exploratory data analysis.</li>
+        <li>Model training and testing.</li>
+        <li>Accuracy, precision, recall and F1-score evaluation.</li>
+      </ul>
+      <h4>Expected Outcome</h4>
+      <p>
+        Demonstrate the application of data analysis and
+        machine learning to a research problem.
+      </p>
+      <p class="note">
+        Educational portfolio project. Model performance will
+        be reported only after actual testing. Not a clinical tool.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="education" id="education">
+  <h2 class="section-title">Education & Certifications</h2>
+  <div class="card">
+    <h3>Bachelor of Science – Computer Science</h3>
+    <p><strong>Ekiti State University</strong></p>
+    <p>Second Class Upper (2:1)</p>
+    <p>
+      Academic foundation in computer science, information
+      technology, analytical thinking and problem-solving.
+    </p>
+    <br>
+    <h3>Professional Learning & Certifications</h3>
+    <ul>
+      <li>Microsoft Excel</li>
+      <li>Power BI</li>
+      <li>SQL</li>
+      <li>Basic Networking</li>
+    </ul>
+  </div>
+</section>
+
+<section id="volunteer">
+  <h2 class="section-title">NYSC Volunteer Experience</h2>
+  <p class="section-intro">
+    Community Development Service – Environmental Sanitation
+    & Protection Team, Mushin LGA, Lagos.
+  </p>
+  <div class="timeline">
+    <div class="timeline-item">
+      <h3>Daleko Market Sanitation Drive</h3>
+      <p class="date">November 2025 – October 2026</p>
+      <p>
+        Participated in market sanitation activities, engaging
+        vendors on proper waste disposal and environmental
+        cleanliness. Supported activities using cleaning tools
+        and sanitation materials.
+      </p>
+    </div>
+    <div class="timeline-item">
+      <h3>Ojuwoye Market Health Initiative</h3>
+      <p>
+        Supported a community health outreach involving prostate
+        cancer screening activities, blood pressure monitoring,
+        elderly consultations, distribution of face masks and
+        crowd coordination.
+      </p>
+    </div>
+    <div class="timeline-item">
+      <h3>Ilupeju Primary School Outreach</h3>
+      <p>
+        Participated in coordinating and supporting a school
+        hygiene and educational outreach, including supplies
+        and refreshments for participants.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <h2 class="section-title">Let's Connect</h2>
+  <p>
+    I am open to opportunities in Data Analytics,
+    Business Intelligence, IT Support and technology-driven roles.
+    I welcome opportunities to learn, contribute and grow.
+  </p>
+  <div class="buttons" style="justify-content:center">
+    <a class="btn" href="mailto:akinyeleemmanuel03@gmail.com">
+      Email Me
+    </a>
+    <a class="btn outline"
+       href="https://github.com/Akinbobola03"
+       target="_blank" rel="noopener">
+      GitHub Profile
+    </a>
+  </div>
+  <p style="margin-top:25px">
+    akinyeleemmanuel03@gmail.com
+  </p>
+</section>
+
+<footer>
+  <p>© 2026 Akinyele Akinbobola Emmanuel. All rights reserved.</p>
+  <p>Data Analytics | Business Intelligence | IT Support</p>
+</footer>
+
+</body>
+</html>
